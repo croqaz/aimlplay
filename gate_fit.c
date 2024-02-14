@@ -42,6 +42,7 @@ float loss(float w1, float w2, float b) {
     float e = y - train[i][2];
     result += e*e;
   }
+  result /= train_count;
   return result;
 }
 
@@ -63,6 +64,7 @@ int main() {
     float dw1 = (loss(w1+eps, w2, b) - c) / eps;
     float dw2 = (loss(w1, w2+eps, b) - c) / eps;
     float db = (loss(w1, w2, b+eps) - c) / eps;
+    // tweak model weights
     w1 -= dw1 * rate;
     w2 -= dw2 * rate;
     b -= db * rate;
