@@ -4,6 +4,7 @@
 #include <math.h>
 
 // from: https://youtube.com/watch?v=PGSba51aRYU
+// https://github.com/tsoding/ml-notes
 
 // OR
 float train[][3] = {

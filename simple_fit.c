@@ -3,6 +3,7 @@
 #include <time.h>
 
 // from: https://youtube.com/watch?v=PGSba51aRYU
+// https://github.com/tsoding/ml-notes
 
 float train[][2] = {
   // input -> expected
