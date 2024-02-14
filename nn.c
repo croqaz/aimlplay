@@ -5,6 +5,7 @@
 #include <time.h>
 
 // inspired from: https://youtu.be/L1TbWe8bVOc
+// https://github.com/tsoding/nn.h
 
 float rand_float() {
   return (float)rand() / (float)RAND_MAX;
